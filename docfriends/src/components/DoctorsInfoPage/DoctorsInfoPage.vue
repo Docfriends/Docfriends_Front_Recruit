@@ -3,7 +3,7 @@
     <div v-if="this.export.alarmActivationState==='N'">
       <b-avatar :src= "this.export.profileImgPath" size="6rem" badge badge-variant="secondary"></b-avatar>
     </div>
-    <div v-if="this.export.alarmActivationState==='F'">
+    <div v-if="this.export.alarmActivationState==='Y'">
       <b-avatar :src= "this.export.profileImgPath" size="6rem" badge badge-variant="Success"></b-avatar>
     </div>
     <h5>{{this.export.name}} {{this.export.expertTypeName}}님</h5>
@@ -37,6 +37,11 @@
     <h5>소속 정보</h5>
     <p>{{this.export.companyName}}</p>
     <p>{{this.export.companyJibun}}</p>
+    <br>
+    <div style="text-align:center">
+      <b-button size="lg" pill variant="outline-secondary" @click="goCompanyPage()">닥프렌즈 병원 바로가기 ></b-button>
+    </div>
+    
     </b-jumbotron>
   </div>
 </template>
@@ -46,7 +51,7 @@ import axios from "axios"
 
 export default {
   name: 'DoctorsInfoPage',
-   data: function() {
+  data: function() {
     return {
       export: {},
     }
@@ -56,9 +61,13 @@ export default {
       console.log(res.data.data)
       this.export = res.data.data
     })
+  },
+  methods: {
+    goCompanyPage: function() {
+      this.$router.push({ name: 'MainInfoPage'})
+    }
   }
-
-}
+} 
 </script>
 
 <style>
