@@ -24,6 +24,22 @@ UI구조에 정확한 정답은 없으며, 해당 구조로 만든 이유를 설
 * readme에 실행 방법을 적어주세요
 * 질문이 있으실 경우 info@docfriends.com으로 문의 부탁드립니다.
 
+# 실행방법
+
+1. 필수 패키지를 설치합니다. 
+
+   ```bash
+   npm install
+   ```
+
+2. 프로젝트를 실행시킵니다. 
+
+   ```bash
+   npm run serve
+   ```
+
+   
+
 # Front
 
 ## 1. 소속 상세
@@ -33,7 +49,7 @@ UI구조에 정확한 정답은 없으며, 해당 구조로 만든 이유를 설
 
 ### 1) 소속 정보
 
-<img src="example/1.company-info.png" width="300">
+<img src="example/1.company-info.png" width="2000">
 
 * [소속 데이터(https://docfriends.github.io/Docfriends_Front_Recruit/api/company.json)](https://docfriends.github.io/Docfriends_Front_Recruit/api/company.json) 를 이용하여 화면을 표시 해주세요
 * 소속 전문가를 클릭하면 2)소속 전문가 화면이 표시됩니다
@@ -41,7 +57,7 @@ UI구조에 정확한 정답은 없으며, 해당 구조로 만든 이유를 설
 
 ### 2) 소속 전문가
 
-<img src="example/2.company-expert.png" width="300">
+<img src="example/2.company-expert.png" width="2000">
 
 * [소속 전문가 데이터(https://docfriends.github.io/Docfriends_Front_Recruit/api/companyExpert.json)](https://docfriends.github.io/Docfriends_Front_Recruit/api/companyExpert.json) 를 이용하여 화면을 표시 해주세요
 * 소속 정보를 클릭하면 1)소속 정보화면이 표시됩니다
@@ -49,7 +65,10 @@ UI구조에 정확한 정답은 없으며, 해당 구조로 만든 이유를 설
 
 ## 2. 전문가
 
-<img src="example/3.expert.png" width="300">
+<img src="example/3.expert.png" width="2000">
 
 * [전문가 데이터(https://docfriends.github.io/Docfriends_Front_Recruit/api/expert.json)](https://docfriends.github.io/Docfriends_Front_Recruit/api/expert.json) 를 이용하여 화면을 표시 해주세요
 * 하단 바로가기 버튼을 클릭하면 1.소속 상세 화면으로 넘어갑니다
+
+
+
